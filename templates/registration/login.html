@@ -3,7 +3,8 @@
 {% block content %}
   <h1>Login</h1>
   {% if form.errors %}
-    <p>erro</p>
+    <p>Your username and password didn't match.
+      Please try again.</p>
 {% endif %}
   <form action="{% url 'login' %}" method="post">
     {%csrf_token%}
